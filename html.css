@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animes</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #111827, #1e293b);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        /* CABEÇALHO */
+        header {
+            background: #0f172a;
+            border-bottom: 3px solid #7c3aed;
+            padding: 20px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #a78bfa;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+        }
+
+        /* CONTEÚDO */
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titulo h1 {
+            font-size: 45px;
+            color: #c4b5fd;
+            margin-bottom: 10px;
+        }
+
+        .titulo p {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: #f8fafc;
+            color: #1e293b;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(124, 58, 237, 0.35);
+        }
+
+        .imagem {
+            width: 100%;
+            height: 280px;
+            background: #ddd;
+            overflow: hidden;
+        }
+
+        .imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .conteudo {
+            padding: 25px;
+        }
+
+        .conteudo h2 {
+            color: #6d28d9;
+            margin-bottom: 15px;
+            font-size: 27px;
+        }
+
+        .conteudo h3 {
+            color: #4c1d95;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        .conteudo p {
+            line-height: 1.7;
+            color: #475569;
+            font-size: 16px;
+        }
+
+        .frase {
+            margin-top: 20px;
+            padding: 15px;
+            border-left: 5px solid #7c3aed;
+            background: #ede9fe;
+            border-radius: 8px;
+            color: #4c1d95;
+            font-style: italic;
+        }
+
+        /* CARD INTRODUÇÃO */
+        .introducao {
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
+            color: white;
+            padding: 35px;
+            border-radius: 18px;
+            margin-bottom: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .introducao h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .introducao p {
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* RODAPÉ */
+        footer {
+            margin-top: 60px;
+            padding: 25px;
+            text-align: center;
+            background: #0f172a;
+            color: #94…
